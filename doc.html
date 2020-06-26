@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VMark Documentation</title>
+        <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" href="css/bootswatch.min.css">
+    </head>
+    <body>
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">VMark</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.php">Download</a></li>
+                    <li><a href="list.php">List of videos</a></li>
+                     <li><a href="#">Video Tutorial</a></li>
+                     <li><a href="mailto:v4webtech@gmail.com">Support</a></li>
+                </ul>
+            </div>
+        </div>        <div class="container">
+         <h1>VMARK Documentation</h1>
+           <div class="row">
+               <p>Thank You For Using VMark You can contact us for support/Customization email : v4webtech@gmail.com </p>
+                <div class="col-lg-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">How To Install Script</h3></div>
+                        <div class="panel-body">
+                            <p>1.Upload and unzip vmark.zip in to your webserver<br>
+                            2. Chnage The config.php file according to your needs.<br>
+                             ↳ $secretPassword = "YOUR MD5 HSAHSED PASSWORD"; Default Password is demo<br>
+                             ↳ Set $ffmpeg if your ffmpeg location is diffrent<br>
+                             ↳ Set $thumbs_size For Cusom Thumbnail Size Image (Use 150:150 for 150px by 150px<br>
+                             ↳ Set $keepfiles true or false. If its True it will keep originalfiles and create new file for watermarked.<br>
+                            3. Add your watermark logo files into watermakrs folder with .png extension<br>
+                            4. For Video Watermark. Add .mov file with alpha and upload png file of same video size with correct file names. <br>
+                            i.e. if file name is wm.mov image file name is wm.mov.png<br>
+                            and upload both on watermark_video folder<br>
+                            5. For Audio Replace , Upload your audio/mp3 on audio folder.
+                            <br>You are ready To Use This Script Click here <a href="index.php" >Start V Mark</a> <br>
+                         <a href="#video">  Check Video Tutorial </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">How To Upgrade</h3></div>
+                        <div class="panel-body">
+                            <p>1.Upload and unzip folder.zip in to your webserver and extract to replace with new files. Dont worry your videos and watermarks will be there.<br>
+                            2. Chnage The config.php file according to your needs.<br>
+                            3. Add your watermark logo files into watermakrs folder with .png extension
+                            <br>You are ready To Use This Script Click here <a href="index.php" >Start V Mark</a> <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">How To Upload Files</h3></div>
+                        <div class="panel-body">
+                            <p>There are two ways you can upload files<br>
+                            <b>1. Upload From Remote URL</b><br>
+                            Add Remote URL , Set Name If You Like Any New Name > Hit Transload Button <br><br>
+                             <b>2. Upload From System</b><br>
+                             Choose File From PC, Mobile, Set Name If You Like Any New Name<br><br>
+                             <b>NOTE : Use .mp4 .avi .3gp URLS for direct uploads.</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Video Watermark: NEW in V4</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin IMAGE-FADE<br>
+                            2. Choose VIDEO Option.<br>
+                            3. Choose Video Watermark From The Drop Down.<br>
+                            4. Once Selected You Will See An Image, Click on image and you able to drag and resize image from bottom right.<br>
+                            5. Place to correct position and set time for the video overlay. You can also set multiple times on same video.
+                            <br>(This will useful if you wanted to show transparent overlay video, lowerthierd , animated watermark etc. )<br>
+                            6. Once Time Is Set. Double click on watermark image to get the posistion and scale. <br>
+                            7. Click On Render Video Button Will Start The Process.<br>
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Video Speed Up/Down: NEW in V4</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin IMAGE-FADE<br>
+                            2. Choose SPEED Option.<br>
+                            3. For Speed Up Enter Number value for 2x Add 2 and click speed up button.<br>
+                            4. For Speed Down Choose Slow Speed from Dropdown and click slow down button.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Convert Video To Mp3 : NEW in V4</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin IMAGE-FADE<br>
+                            2. Choose Audio Option.<br>
+                            3. Click Extract Audio (mp3 will be saved inside audio/ folder).<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Replace Audio In Video : NEW in V4</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin IMAGE-FADE<br>
+                            2. Choose Audio Option.<br>
+                            3. Choose Audio File From The Dropdown list (You can add more audio into audio/ folder).<br>
+                            4. Choose Audio Lenght Option<br>
+                            5. Click On Replace Audio Button
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Reverse Video : NEW in V4</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin IMAGE-FADE<br>
+                            2. Choose Reverse Video Option.<br>
+                            3. Click On Reverse Video Button.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Image Watermark Fade IN-OUT : NEW in V3.1</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin IMAGE-FADE<br>
+                            2. Pause Video By Clicking On Pause Button.<br>
+                            3. Click On GET Button For Get In Time.<br>
+                            4. Forward Your Video At Poit And Get Out Time<br>
+                            5. Select Your Logo And Drag To The Position >> Double Click On It And Hit Watermark Button.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Scrolling Text Watermark : NEW in V3.1</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin TEXT<br>
+                            2. Enter Your Text In Box.<br>
+                            3. Set Font , Opacity, Font Size.<br>
+                            4. In Bottom Select Scrolling Text to YES >> Choose Margin From Bottom i.e 30<br>
+                            5. Select Loop Type >> Hit Text Watermark It Button. You DONE!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Convert Videos : NEW in V3.1</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin CONVERT<br>
+                            2. Select Make New File Or Replace Original.<br>
+                            3. Choose Your Format From List Of Avilable Formats.<br>
+                            4. Hit Convert Button New Converted File Will Be in <a href="list.php" target="_blank">List Page</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Rotate Videos : NEW in V3.1</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> > Choose Plugin ROTATE<br>
+                            2. Select Rotation.<br>
+                            3. Hit The Rotate The Video Button.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Image Watermark Video</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> Choose Plugin IMAGE<br>
+                            2. Select Your Logo With Radio Button.<br>
+                            3. Drag The Logo Over Video Where You Like To Place.
+                            <br>4. Doubble Click On Logo To Get Posistion And Hit Watermark Button. Your Watermark Will Be There :)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                  <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Text Watermark Video</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> Choose Plugin TEXT<br>
+                            2. Enter Your Text In Text Box.<br>
+                            3. Choose Font Type Style Color And Opacity.
+                            <br>4. Choose Border Around Font Or Not. Click On Text Watermark Button.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Crop Video Area</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> Choose Plugin CROP <br>
+                            2. Drag The Get Area Over The Video.<br>
+                            3. Set The Height and Witdh By Draggin From Bottom Right Corner icon.
+                            <br>4. Click On Get Area And Then Click On Crop Button. You Done!.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">How To Trim Video By Time</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> Choose Plugin TRIM <br>
+                            2. You Can Set Start and End Time In Box with format of HH:MM:SS<br>
+                            3. Once time seted, Click Trim
+                            <br>Tip: You Can Show Hide Video Player Controls With Show Hide Buttons to See the time on video player.
+                            <br>
+                            #New : You can now select Acept Ratio In Drop Down (Must Select Ratio Otherwise It Will Be Not Resizable)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Extract Perfect Thumbnails</h3></div>
+                        <div class="panel-body">
+                            <p>1.In <a href="list.php" target="_blank">List Page</a> Click On Button LIKE : <a href="#" class="btn btn-success" style="text-decoration:none">VMark It!</a> Choose Plugin THUMB <br>
+                            2. In Generate Thumbs Area Pause Video On Perfect Time.<br>
+                            3. Once time seted,Click Generate Perfect Thumb Button, And You will have exact thumbnail extracted from view. :D
+                            Tip: For set Custom Thumbnails Set Thumbnail Size In config.php file.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading"><h3 class="panel-title">Other Information</h3></div>
+                        <div class="panel-body">
+                            <p># This Script Works Best With .mp4 Files<br>
+                            # We Can Customize Or Intigrate This Script With Your Exsisting Videos Website.<br>
+                            # We Are Providing Hosting To Run This Script.
+                            <br># Last But Not Least , Don't Forgate To Rate This app Here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="panel panel-danger" id="video">
+                        <div class="panel-heading"><h3 class="panel-title">Video Tutorial (Version 3.1)</h3></div>
+                        <div class="panel-body">
+                           <iframe width="100%" height="400" src="https://www.youtube.com/embed/-9ifYbwO048" frameborder="0" gesture="media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+       </div><!-- End container -->
+        <footer>
+        </footer>
+<p>&nbsp; © 2016 VWebTech Inc.</p>
+    </body>
+</html>
