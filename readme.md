@@ -1,4 +1,5 @@
-SHARED ON CODELIST.CC
+It's now easier to Crop & Trim videos with Graphical User Interface.
 
+This script working on Dedicated , VPS , and Shared Hosting Server As Well. 
 
- www.codelist.cc
+You can customize the script to work with any CMS like Wordpress,Joomla, etc.
